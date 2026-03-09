@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Desk</title>
+  <link href="style.css" rel="stylesheet">
+  <script defer src="./script.js" type="module"></script>
+</head>
+
+<body>
+  <div class="lightLeak2"></div>
+  <div class="lightLeak"></div>
+  <div class="right-tint"></div>
+  <div class="grunge"></div>
+  <div class="noise"></div>
+  <div class="scratch"></div>
+
+
+  <div id="main-cursor">
+    <div class="cursor-progress"></div>
+  </div>
+
+
+  <div id="desk">
+    <div id="main-stage">
+
+      <div class="bg-text bg-text-one"><span>move.</span> not scroll<br><span>drag.</span> not click</div>
+      <div class="bg-text bg-text-two">
+        consistency. proximity. similarity. hierarchy. affordance. feedback. visibility. constraints. mapping.
+        signifiers. recognition. clarity. simplicity. grouping. alignment. contrast. repetition. balance. order.
+        structure. predictability. learnability. discoverability. responsiveness. accessibility. legibility.
+        readability. familiarity. continuity. closure. figure–ground. emphasis. rhythm. scale. proportion. spacing.
+        margin. grid. flow. consistency. proximity. similarity. hierarchy. affordance. feedback. visibility.
+        constraints. mapping. signifiers. recognition. clarity. simplicity. grouping. alignment. contrast. repetition.
+        balance. order. structure. predictability. learnability. discoverability. responsiveness. accessibility.
+        legibility. readability. familiarity. continuity. closure. figure–ground. emphasis. rhythm. scale. proportion.
+        spacing. margin. grid. flow. consistency. proximity. similarity. hierarchy. affordance. feedback. visibility.
+        constraints. mapping. signifiers. recognition. clarity. simplicity. grouping. alignment. contrast. repetition.
+        balance. order. structure. predictability. learnability. discoverability. responsiveness. accessibility.
+        legibility. readability. familiarity. continuity. closure. figure–ground. emphasis. rhythm. scale. proportion.
+        spacing. margin. grid. flow.
+      </div>
+
+      <!--       target-zone -->
+      <div class="target-zone" id="target-rectangle"></div>
+      <div class="target-zone" id="target-highlight"></div>
+      <div class="target-zone" id="target-line"></div>
+      <div class="target-zone" id="target-stain-ring" data-id="memo_about"></div>
+      <div class="target-zone" id="target-organic-stain"></div>
+
+
+      <div class="draggable polaroid" id="landscape_with_noise">
+        <div class="noise-layer-item"></div>
+        <img class="photo-img" src="./images/photos/damaged_film.JPG"
+          alt="mountain range on damaged film with pink speckled noise" />
+      </div>
+
+      <div class="draggable polaroid" id="window">
+        <div class="noise-layer-item"></div>
+        <img class="photo-img" src="./images/photos/window.JPG"
+          alt="row of old metal mailboxes with papers sticking out" />
+      </div>
+
+
+      <div class="draggable" id="photo">
+        <div class="photo-effect-layer"></div>
+        <img id="books_in_fridge" src="./images/photos/books_in_fridge.JPG"
+          alt="black and white photo of some books in a fridge" />
+      </div>
+
+      <!-- receipt -->
+      <div class="draggable receipt-wrapper" id="receipt">
+        <div class="scrap" id="receipt-printer">
+          <div id="receipt-logs"></div>
+        </div>
+      </div>
+
+
+      <!-- memo -->
+      <div class="draggable tape action-memo" id="memo_about">
+        <div class="noise-layer-item"></div>
+        <div class="memo-hint">Know more about me?<br><span>Drag this to the stain ring on the right.<br>mark sure no
+            other item is on top!</div></span>
+        <div class="expanded-content">
+          <span><i>she’s a little shy…so i’ll speak for her.</i></span><br>
+          she has a <u>personality</u>.<br>
+          she doesn’t behave like other websites.<br>
+          <b>MESSY. UNPOLISHED.</b><br>
+          she reveals the interaction between you two.<br>
+          try interacting with her a little differently.<br>
+          <span><i>—creator</i></span>
+        </div>
+      </div>
+
+      <div class="draggable action-memo" id="memo_rightplace">
+        <div class="noise-layer-item"></div>
+        <div class="shred-letter">Everything in its right place. Everything in its right place? Everything
+          in its right place! Everything in its right place...Everything in its right place. Everything in its right
+          place? Everything in its right place! Everything in its right place...</div>
+      </div>
+
+      <div class="draggable action-memo" id="memo_hci">
+        <div class="noise-layer-item"></div>
+        <div class="memo-content shred-letter">humans and interfaces interact with each other more often than we
+          realize. every day
+          we click, drag, scroll, hover, tap, and repeat these gestures thousands of times. over time these actions
+          slowly turn into habits. our hands begin to remember where to move, when to click, when to scroll further down
+          a page. we rarely stop to think about it. the interface teaches us how to behave, and we quietly adapt. some
+          buttons invite a click, some images look draggable, some pages expect us to scroll endlessly. these
+          expectations feel natural, but they are all learned. human–computer interaction is not just about machines
+          responding to people, but also about people learning the language of interfaces. sometimes, when an interface
+          behaves slightly differently, we suddenly become aware of our own habits. a small moment of confusion appears:
+          why doesn’t this work the way i expected? in that moment we notice the gestures we have been repeating without
+          thinking. maybe interaction is not just a technical exchange, but a small relationship between human curiosity
+          and designed behavior.
+        </div>
+      </div>
+
+      <div class="draggable action-memo" id="memo_messup">
+        <div class="noise-layer-item"></div>
+        <div class="memo-content shred-letter">here, you can’t undo anything. but... feel free to MESS THINGS UP! </div>
+      </div>
+    </div>
+
+  </div>
+  <div id="scroll-warning" class="system-sticker">
+    <div class="sticker-text">
+      <!--           STOP. STOP. STOP. STOP. STOP. STOP. STOP. STOP. STOP.-->
+      <br>
+    </div>
+    <!--           <div class="sticker-text2">Let's wait...</div> -->
+  </div>
+  </div>
+</body>
+
+</html>
